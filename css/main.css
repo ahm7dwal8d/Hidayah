@@ -78,9 +78,17 @@ a {
 /* End Global Rules  */
 /* Start Header */
 .header {
+    position: relative;
+}
+.header.fixed {
     position: fixed;
     width: 100%;
     z-index: 9999;
+    transition: all 0.4s linear;
+    -webkit-transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+    -ms-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
 }
 .header nav  {
     padding-top: 10px;
@@ -91,7 +99,6 @@ a {
 .header .navbar-brand {
     font-size: 30px;
     color: white;
-    height: 113px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -106,6 +113,9 @@ a {
     height: 100vh;
     position: relative;
     overflow: hidden;
+    background-image: url(../images/slide/slide-1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
 }
 .landing::before {
     content: '';
@@ -117,36 +127,19 @@ a {
     background-color: rgba(12, 13, 14, 0.8);
     z-index: 1;
 }
-.landing img {
-    max-width: 100%;
-    max-height: 100%;
-}
-@media (max-width: 1200px) {
-    .landing img {
-        max-width: 100%;
-        height: 100vh;
-    }
-}
-.landing .carousel-caption {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    z-index: 5;
-}
-.landing h2 {
-    font-size: 50px;
+.landing .container h2 {
     margin-top: 0;
     font-weight: 700;
+    position: relative;
+    z-index: 1;
 }
 .landing p {
     font-size: 20px;
     line-height: 1.6;
-    width: 100%;
+    width: 800px;
+    margin: 20px auto;
+    position: relative;
+    z-index: 1;
 }
 
 .landing a {
@@ -160,6 +153,8 @@ a {
     background-color: var(--main-Color);
     margin: 20px auto;
     text-decoration: none;
+    position: relative;
+    z-index: 1;
 }
 .landing a:hover {
     background: none;
@@ -173,8 +168,7 @@ a {
 /* End landing  */
 /* Start About */
 .about {
-    padding-top: var(--main-Padding);
-    padding-bottom: var(--main-Padding);
+    overflow: hidden;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -195,27 +189,33 @@ a {
 }
 .about .img .icon {
     position: absolute;
-    left: 357px;
-    top: 356px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
     width: 120px;
     height: 120px;
     border-radius: 50%;
     background: radial-gradient(#428bca 50%,    rgba(66, 139, 202, 0.4) 52%);
     overflow: hidden;
+    -webkit-transform: translate(-50% , -50%);
+    -moz-transform: translate(-50% , -50%);
+    -ms-transform: translate(-50% , -50%);
+    -o-transform: translate(-50% , -50%);
+    overflow: hidden;
 }
-@media (max-width: 1300px) {
-    .about .img .icon {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        -webkit-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        -o-transform: translate(-50%, -50%);
+.about .img .icon::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff54;
 }
+.about .img .icon:hover::after {
+    animation: flaching 0.4s linear;
+    -webkit-animation: flaching 0.4s linear;
 }
-.about .img i {
+.about .img svg {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -227,6 +227,7 @@ a {
     top: 44px;
     left: 50px;
     z-index: 5;
+    cursor: pointer;
 }
 .about .info {
     flex-basis: 45%;
@@ -275,12 +276,12 @@ a {
     -ms-transition: var(--main-Transition);
     -o-transition: var(--main-Transition);
 }
-.about .info .box .icons i {
+.about .info .box .icon i {
     display: block;
     padding: 10px;
     color: #428bca;
 }
-.about .info .box .icons i:hover {
+.about .info .box .icon i:hover {
     color: white;
     transition: var(--main-Transition);
     -webkit-transition: var(--main-Transition);
@@ -319,17 +320,21 @@ a {
     font-size: 20px;
 }
 .about .skills .prog span {
-    width: 100%;
+    width: 0;
+    transition: all 0.4s linear;
     background-color: var(--main-Color);
     display: block;
     height: 100%;
     position: relative;
+    -webkit-transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+    -ms-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
 }
 /* End About */
 /* Start Counter */
 .counter {
-    padding-top: var(--main-Padding);
-    padding-bottom: var(--main-Padding);
+    overflow: hidden;
     background-color: var(--section-Color);
 }
 .counter .contianer {
@@ -359,8 +364,7 @@ a {
 /* End Counter */
 /* Start Services */
 .services {
-    padding-top: var(--main-Padding);
-    padding-bottom: var(--main-Padding);
+    overflow: hidden;
 }
 .services .container {
     display: grid;
@@ -372,13 +376,13 @@ a {
         grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
     }
 }
-.services .container i {
+.services .container svg {
     font-size: 50px;
     float: left;
     margin-right: 15px;
     margin-top: 12px;
 }
-.services .box:hover i {
+.services .box:hover svg {
     color: var(--main-Color);
     transition: var(--main-Transition);
     -webkit-transition: var(--main-Transition);
@@ -404,14 +408,14 @@ a {
 /* End Services */
 /* Start Call */
 .call {
-    padding-top: var(--main-Padding);
-    padding-bottom: var(--main-Padding);
+    overflow: hidden;
     background-image: url(../images/cta-bg.jpg);
     background-size: cover;
     background-position: center;
     height: 50vh;
     position: relative;
     text-align: center;
+    background-attachment: fixed;
 }
 .call::before {
     content: '';
@@ -483,15 +487,14 @@ a {
 /* End Call */
 /* Start Portfolio */
 .portfolio {
-    padding-top: var(--main-Padding);
-    padding-bottom: var(--main-Padding);
+    overflow: hidden;
     position: relative;
 }
 .portfolio .container .head-links {
     text-align: center;
     margin: 30px;
 }
-.portfolio .container .head-links a {
+.portfolio .container .head-links span {
     padding: 20px;
     color: black;
     text-transform: uppercase;
@@ -502,17 +505,18 @@ a {
     -ms-border-radius: 6px;
     -o-border-radius: 6px;
     text-decoration: none;
+    cursor: pointer;
 }
 @media (max-width: 767px) {
-    .portfolio .container .head-links a {
+    .portfolio .container .head-links span {
         padding: 10px;
     }
 }
-.portfolio .container .head-links a.active {
+.portfolio .container .head-links span.active {
     background-color: var(--main-Color);
     color: white;
 }
-.portfolio .container .head-links a:hover {
+.portfolio .container .head-links span:hover {
     background-color: var(--main-Color);
     color: white;
     transition: var(--main-Transition);
@@ -529,9 +533,10 @@ a {
 }
 .portfolio .container .portfolio-content .img1 {
     position: relative;
+    overflow: hidden;
 }
 .portfolio .container .portfolio-content img {
-    max-width: 100%;
+    width: 100%;
 }
 .portfolio .container .portfolio-content .img1 .info {
     display: none;
@@ -542,11 +547,11 @@ a {
     -o-transition: var(--main-Transition);
 }
 .portfolio .container .portfolio-content .img1:hover > img {
-    transform: scale(1.1) ;
-    -webkit-transform: scale(1.1) ;
-    -moz-transform: scale(1.1) ;
-    -ms-transform: scale(1.1) ;
-    -o-transform: scale(1.1) ;
+    transform: scale(1.1) rotate(4deg) ;
+    -webkit-transform: scale(1.1) rotate(4deg) ;
+    -moz-transform: scale(1.1) rotate(4deg) ;
+    -ms-transform: scale(1.1) rotate(4deg) ;
+    -o-transform: scale(1.1) rotate(4deg) ;
     transition: var(--main-Transition);
     -webkit-transition: var(--main-Transition);
     -moz-transition: var(--main-Transition);
@@ -571,8 +576,7 @@ a {
 /* End Portfolio */
 /* Start Testimonials */
 .testimonials {
-    padding-top: var(--main-Padding);
-    padding-bottom: var(--main-Padding);
+    overflow: hidden;
     background-color: var(--section-Color);
 }
 .testimonials .testimonials-content {
@@ -593,13 +597,17 @@ a {
     -o-transition: var(--main-Transition);
 }
 .testimonials .testimonials-content img {
-    width: 100px;
+    width: 70px;
+    height: 100px;
 }
 .testimonials .testimonials-content .head {
     display: flex;
 }
 .testimonials .testimonials-content .head .head-info {
     margin: 0 0 20px 20px;
+}
+.testimonials .testimonials-content .head .head-info h1 {
+    font-size: 35px;
 }
 .testimonials .testimonials-content .head .head-info span {
     color: #777;
@@ -611,7 +619,7 @@ a {
     line-height: 1.6;
     font-size: 18px;
 }
-.testimonials .testimonials-content .content i {
+.testimonials .testimonials-content .content  svg {
     font-size: 25px;
     color: var(--main-Color);
     margin: 0 5px 0;
@@ -619,8 +627,7 @@ a {
 /* End Testimonials */
 /* Start Team  */
 .team {
-    padding-top: var(--main-Padding);
-    padding-bottom: var(--main-Padding);
+    overflow: hidden;
 }
 .team .team-content {
     display: grid;
@@ -640,7 +647,7 @@ a {
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
 }
-.team .team-content .box:hover  .info {
+.team .team-content .box:hover .info {
         opacity: 1;
         background: linear-gradient(
             4deg, rgba(0, 0, 0, 0.9) 0%,
@@ -689,12 +696,12 @@ a {
         left: 90px;
     }
 }
-.team .team-content .box .info .social i {
+.team .team-content .box .info .social  svg {
     margin-left: 20px;
     font-size: 25px;
     color: white;
 }
-.team .team-content .box .info .social i:hover {
+.team .team-content .box .info .social svg:hover {
     color: var(--main-Color);
     transition: var(--main-Transition);
     -webkit-transition: var(--main-Transition);
@@ -705,8 +712,7 @@ a {
 /* End Team  */
 /* Start Contact */
 .contact {
-    padding-top: var(--main-Padding);
-    padding-bottom: var(--main-Padding);
+    overflow: hidden;
     background-color: var(--section-Color);
 }
 .contact .contianer {
@@ -721,7 +727,7 @@ a {
 }
 .contact .contact-content {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 50px;
     width: 100%;
 }
@@ -770,15 +776,19 @@ a {
 /* End Contact */
 /* Start Footer */
 .footer {
-    padding-top: var(--main-Padding);
-    padding-bottom: var(--main-Padding);
+    overflow: hidden;
     background-color: #272c30;
     color: white;
 }
-.footer li i {
+.footer .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .footer li svg {
     color: var(--main-Color);
     margin-right: 5px;
-}
+} */
 .footer li {
     padding: 10px;
     text-transform: capitalize;
@@ -797,15 +807,20 @@ a {
     -ms-transition: var(--main-Transition);
     -o-transition: var(--main-Transition);
 }
-@media (max-width: 1191px) {
-    .footer .row {
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
+.footer p {
+    width: 100%;
+    font-size: 20px;
+}
+.footer h3 {
+    margin: 20px 0 ;
+    font-size: 30px;
 }
 .footer span {
     display: block;
     margin: 10px;
+}
+.footer ul {
+    padding: 0;
 }
 .footer .services {
     margin-bottom: 100px;
@@ -817,11 +832,12 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 10px;
 }
-.footer .about-us .icons i {
-    margin-left: 26px;
-    width: 40px;
-    height: 40px;
+.footer .about-us .icons svg {
+    margin-left: 5px;
+    font-size: 25px;
+    padding: 15px;
     background-color: #394047;
     color: #fff;
     cursor: pointer;
@@ -834,7 +850,7 @@ a {
     justify-content: center;
     align-items: center;
 }
-.footer .about-us .icons i:hover {
+.footer .about-us .icons svg:hover {
     background-color: var(--main-Color);
     color: white;
     transition: var(--main-Transition);
@@ -859,7 +875,42 @@ a {
     font-weight: 800;
 }
 /* End Copy */
+.up {
+    position: fixed;
+    right: 40px;
+    bottom: 400px;
+    color: white;
+    text-transform: uppercase;
+    padding: 15px;
+    background-color: var(--main-Color);
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.4s linear;
+    -webkit-transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+    -ms-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+    opacity: 0;
+}
+.up.active {
+    opacity: 1;
+    bottom: 40px;
+}
 
 /* Start Animation */
+@keyframes flaching {
+    20% {
+        opacity: 1;
+    }
 
+    40% {
+        width: 20px;
+        height: 20px;
+    }
+
+    100% {
+        width: 200%;
+        height: 200%;
+    }
+}
 /* End Animation */

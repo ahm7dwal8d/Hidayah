@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/normalze.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;
@@ -19,13 +19,13 @@
     <!-- Start Header  -->
     <div class="header">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
+            <div class="container">
               <a class="navbar-brand" href="index.html">Hidayah</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <i class="fas fa-bars"></i>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                   <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                   </li>
@@ -41,17 +41,6 @@
                   <li class="nav-item">
                     <a class="nav-link" href="#team">Team</a>
                   </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#testimonials">Testimonials</a>
                   </li>
@@ -59,65 +48,23 @@
                     <a class="nav-link" href="#contact">Contact</a>
                   </li>
                 </ul>
-                <form class="d-flex">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
               </div>
             </div>
           </nav>
     </div>
     <!-- End Header  -->
     <!-- Start landing -->
-    <div class="landing" id="home">
-            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="images/slide/slide-1.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                    <h1>Welcome to Hidayah</h1>
-                    <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. 
-                        Minus et tempore modi architecto.</p>
-                        <a href="#">read more</a>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img src="images/slide/slide-2.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h1>Welcome to Hidayah</h1>
-                        <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. 
-                            Minus et tempore modi architecto.</p>
-                            <a href="#">read more</a>
-                        </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img src="images/slide/slide-3.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h1>Welcome to Hidayah</h1>
-                        <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. 
-                            Minus et tempore modi architecto.</p>
-                            <a href="#">read more</a>
-                        </div>
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
+    <div class="landing d-flex justyfy-content-center align-items-center" id="home">
+        <div class="container text-center position-relative z-index-1">
+                <h2 class=" z-index-1 text-white">Welcome to Hidayah</h2>
+                <p class=" z-index-1 text-white-50">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. 
+                    Minus et tempore modi architecto.</p>
+                    <a href="#"  class=" z-index-1">read more</a>
+        </div>
     </div>
     <!-- End landing  -->
     <!-- Start About -->
-    <div class="about" id="about">
+    <div class="about pt-5 pb-5" id="about">
             <div class="img">
                 <img src="images/about.jpg" alt="">
                 <div class="icon">
@@ -127,19 +74,19 @@
                     <div class="prog-holder">
                         <h4>html</h4>
                         <div class="prog">
-                            <span data-progress="100%" style="width: 100%;"></span>
+                            <span data-progress="100%"></span>
                         </div>
                     </div>
                     <div class="prog-holder">
                         <h4>css</h4>
                         <div class="prog">
-                            <span data-progress="90%" style="width: 90%;"></span>
+                            <span data-progress="90%"></span>
                         </div>
                     </div>
                     <div class="prog-holder">
                         <h4>javascript</h4>
                         <div class="prog">
-                            <span data-progress="75%" style="width: 75%;"></span>
+                            <span data-progress="75%"></span>
                         </div>
                     </div>
             </div>
@@ -148,7 +95,7 @@
                 <h2>Enim quis est voluptatibus aliquid consequatur fugiat</h2>
                 <p>Esse voluptas cumque vel exercitationem. Reiciendis est hic accusamus. Non ipsam et sed minima temporibus laudantium. Soluta voluptate sed facere corporis dolores excepturi. 
                     Libero laboriosam sint et id nulla tenetur. Suscipit aut voluptate.</p>
-                    <div class="info-content">
+                    <div class="info-content pt-5">
                         <div class="box">
                             <div class="icons">
                                 <i class="fas fa-fingerprint"></i>           
@@ -181,29 +128,29 @@
     </div>
     <!-- End About  -->
     <!-- Start Counter -->
-    <div class="counter">
+    <div class="counter pt-5 pb-5">
         <div class="contianer">
             <div class="box">
-                <span class="num">232</span>
+                <span class="num" data-goal="232">0</span>
                 <span class="head">clients</span>
             </div>
             <div class="box">
-                <span class="num">521</span>
+                <span class="num" data-goal="521">0</span>
                 <span class="head">projects</span>
             </div>
             <div class="box">
-                <span class="num">1463</span>
+                <span class="num" data-goal="1463">0</span>
                 <span class="head">hours of support</span>
             </div>
             <div class="box">
-                <span class="num">15</span>
+                <span class="num" data-goal="100">0</span>
                 <span class="head">hard workers</span>
             </div>
         </div>
     </div>
     <!-- End Counter  -->
     <!-- Start Services  -->
-    <div class="services" id="services">
+    <div class="services pt-5 pb-5" id="services">
         <h3 class="main-header">
             services
         </h3>
@@ -212,7 +159,7 @@
             <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci <br> 
                 expedita at voluptas atque vitae autem.</p>
         </div>
-        <div class="container">
+        <div class="container pt-5">
             <div class="box">
                 <div class="icons">
                     <i class="fas fa-chart-pie"></i>
@@ -277,7 +224,7 @@
     </div>
     <!-- End Call -->
     <!-- Start Portfolio -->
-    <div class="portfolio" id="portfolio">
+    <div class="portfolio pt-5 pb-5" id="portfolio">
         <h3 class="main-header">
             portfolio
         </h3>
@@ -286,152 +233,163 @@
             <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci <br> 
                 expedita at voluptas atque vitae autem.</p>
         </div>
-        <div class="container">
+        <div class="container pt-5">
             <div class="head-links">
-                <a href="#" class="active">all</a> \
-                <a href="#">app</a> \
-                <a href="#">card</a> \
-                <a href="#">web</a>
+                <span class="active" data-class=".img1">all</span> \
+                <span data-class=".app">app</span> \
+                <span data-class=".card">card</span> \
+                <span data-class=".web">web</span>
             </div>
             <div class="portfolio-content">
-                <div class="img1">
+                <div class="img1 app">
                     <img src="images/portfolio/portfolio-1.jpg" alt="">
                 </div>
-                <div class="img1">
+                <div class="img1 card">
                     <img src="images/portfolio/portfolio-2.jpg" alt="">
                 </div>
-                <div class="img1">
+                <div class="img1 card">
                     <img src="images/portfolio/portfolio-3.jpg" alt="">
                 </div>
-                <div class="img1">
+                <div class="img1 app">
                     <img src="images/portfolio/portfolio-4.jpg" alt="">
                 </div>
-                <div class="img1">
+                <div class="img1 app">
                     <img src="images/portfolio/portfolio-5.jpg" alt="">
                 </div>
-                <div class="img1">
+                <div class="img1 card">
                     <img src="images/portfolio/portfolio-6.jpg" alt="">
                 </div>
-                <div class="img1">
+                <div class="img1 app">
                     <img src="images/portfolio/portfolio-7.jpg" alt="">
                 </div>
-                <div class="img1">
+                <div class="img1 card">
                     <img src="images/portfolio/portfolio-8.jpg" alt="">
                 </div>
-                <div class="img1">
+                <div class="img1 app">
                     <img src="images/portfolio/portfolio-9.jpg" alt="">
-                    </div>
+                </div>
+                <div class="img1 web">
+                    <img src="images/portfolio/portfolio-details-1.jpg" alt="">
+                </div>
+                <div class="img1 web">
+                    <img src="images/portfolio/portfolio-details-2.jpg" alt="">
+                </div>
+                <div class="img1 web">
+                    <img src="images/portfolio/portfolio-details-3.jpg" alt="">
+                </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- End Portfolio -->
     <!-- Start Testimonials -->
-    <div class="testimonials" id="testimonials">
-        <h3 class="main-header">
-            TESTIMONIALS
-        </h3>
-        <div class="section-header">
-            <h2>What They <span>Are Saying </span> About Us</h2>
-            <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci <br> 
-                expedita at voluptas atque vitae autem.</p>
-        </div>
-        <div class="testimonials-content">
-            <div class="box">
-                <div class="head">
-                    <img src="images/testimonials/testimonials-1.jpg" alt="">
-                    <div class="head-info">
-                        <h1>Saul Goodman</h1>
-                        <span>Ceo & Founder</span>
-                    </div>
-                </div>
-                <div class="content">
-                    <i class="fas fa-quote-left"></i>
-                    Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. 
-                    Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                    <i class="fas fa-quote-right"></i>
-                </div>
+    <div class="testimonials pt-5 pb-5" id="testimonials">
+        <div class="container">
+            <h3 class="main-header">
+                TESTIMONIALS
+            </h3>
+            <div class="section-header">
+                <h2>What They <span>Are Saying </span> About Us</h2>
+                <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci <br> 
+                    expedita at voluptas atque vitae autem.</p>
             </div>
-            <div class="box">
-                <div class="head">
-                    <img src="images/testimonials/testimonials-2.jpg" alt="">
-                    <div class="head-info">
-                        <h1>Sara Wilsson</h1>
-                        <span>Designer</span>
+            <div class="testimonials-content pt-5">
+                <div class="box">
+                    <div class="head">
+                        <img src="images/testimonials/testimonials-1.jpg" alt="">
+                        <div class="head-info">
+                            <h1>Saul Goodman</h1>
+                            <span>Ceo & Founder</span>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <i class="fas fa-quote-left"></i>
+                        Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. 
+                        Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                        <i class="fas fa-quote-right"></i>
                     </div>
                 </div>
-                <div class="content">
-                    <i class="fas fa-quote-left"></i>
-                    Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum 
-                    velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                    <i class="fas fa-quote-right"></i>
-                </div>
-            </div>
-            <div class="box">
-                <div class="head">
-                    <img src="images/testimonials/testimonials-3.jpg" alt="">
-                    <div class="head-info">
-                        <h1>Jena Karlis</h1>
-                        <span>Store Owner</span>
+                <div class="box">
+                    <div class="head">
+                        <img src="images/testimonials/testimonials-2.jpg" alt="">
+                        <div class="head-info">
+                            <h1>Sara Wilsson</h1>
+                            <span>Designer</span>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <i class="fas fa-quote-left"></i>
+                        Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum 
+                        velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                        <i class="fas fa-quote-right"></i>
                     </div>
                 </div>
-                <div class="content">
-                    <i class="fas fa-quote-left"></i>
-                    Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor 
-                    labore quem eram duis noster aute amet eram fore quis sint minim.
-                    <i class="fas fa-quote-right"></i>
-                </div>
-            </div>
-            <div class="box">
-                <div class="head">
-                    <img src="images/testimonials/testimonials-4.jpg" alt="">
-                    <div class="head-info">
-                        <h1>Matt Brandon</h1>
-                        <span>Freelancer</span>
+                <div class="box">
+                    <div class="head">
+                        <img src="images/testimonials/testimonials-3.jpg" alt="">
+                        <div class="head-info">
+                            <h1>Jena Karlis</h1>
+                            <span>Store Owner</span>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <i class="fas fa-quote-left"></i>
+                        Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor 
+                        labore quem eram duis noster aute amet eram fore quis sint minim.
+                        <i class="fas fa-quote-right"></i>
                     </div>
                 </div>
-                <div class="content">
-                    <i class="fas fa-quote-left"></i>
-                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor 
-                    enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam. 
-                    <i class="fas fa-quote-right"></i>
-                </div>
-            </div>
-            <div class="box">
-                <div class="head">
-                    <img src="images/testimonials/testimonials-5.jpg" alt="">
-                    <div class="head-info">
-                        <h1>John Larson</h1>
-                        <span>Entrepreneur</span>
+                <div class="box">
+                    <div class="head">
+                        <img src="images/testimonials/testimonials-4.jpg" alt="">
+                        <div class="head-info">
+                            <h1>Matt Brandon</h1>
+                            <span>Freelancer</span>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <i class="fas fa-quote-left"></i>
+                        Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor 
+                        enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam. 
+                        <i class="fas fa-quote-right"></i>
                     </div>
                 </div>
-                <div class="content">
-                    <i class="fas fa-quote-left"></i>
-                    Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa 
-                    nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                    <i class="fas fa-quote-right"></i>
-                </div>
-            </div>
-            <div class="box">
-                <div class="head">
-                    <img src="images/testimonials/testimonials-6.jpg" alt="">
-                    <div class="head-info">
-                        <h1>Emily Harison</h1>
-                        <span>Store Owner</span>
+                <div class="box">
+                    <div class="head">
+                        <img src="images/testimonials/testimonials-5.jpg" alt="">
+                        <div class="head-info">
+                            <h1>John Larson</h1>
+                            <span>Entrepreneur</span>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <i class="fas fa-quote-left"></i>
+                        Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa 
+                        nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                        <i class="fas fa-quote-right"></i>
                     </div>
                 </div>
-                <div class="content">
-                    <i class="fas fa-quote-left"></i>
-                    Eius ipsam praesentium dolor quaerat inventore rerum odio. Quos laudantium adipisci eius. Accusamus qui iste 
-                    cupiditate sed temporibus est aspernatur. Sequi officiis ea et quia quidem. 
-                    <i class="fas fa-quote-right"></i>
+                <div class="box">
+                    <div class="head">
+                        <img src="images/testimonials/testimonials-6.jpg" alt="">
+                        <div class="head-info">
+                            <h1>Emily Harison</h1>
+                            <span>Store Owner</span>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <i class="fas fa-quote-left"></i>
+                        Eius ipsam praesentium dolor quaerat inventore rerum odio. Quos laudantium adipisci eius. Accusamus qui iste 
+                        cupiditate sed temporibus est aspernatur. Sequi officiis ea et quia quidem. 
+                        <i class="fas fa-quote-right"></i>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- End Testimonials -->
     <!-- Start Team -->
-    <div class="team" id="team">
+    <div class="team pt-5 pb-5" id="team">
         <h3 class="main-header">
             TEAM
         </h3>
@@ -440,136 +398,139 @@
             <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci <br> 
                 expedita at voluptas atque vitae autem.</p>
         </div>
-        <div class="team-content">
-            <div class="box">
-                <img src="images/team/team-1.jpg" alt="">
-                <div class="info">
-                    <div class="head">
-                    <h2>Sarah Jhonson</h2>
-                    <span>Product Manager</span>                        
+        <div class="container pt-5">
+            <div class="team-content">
+                <div class="box">
+                    <img src="images/team/team-1.jpg" alt="">
+                    <div class="info">
+                        <div class="head">
+                        <h2>Sarah Jhonson</h2>
+                        <span>Product Manager</span>                        
+                        </div>
+                    <div class="social">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-linkedin"></i>
                     </div>
-                <div class="social">
-                    <i class="fab fa-facebook-f"></i>
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-linkedin"></i>
-                </div>
-                </div>
-            </div>
-            <div class="box">
-                <img src="images/team/team-2.jpg" alt="">
-                <div class="info">
-                    <div class="head">
-                    <h2>Sarah Jhonson</h2>
-                    <span>Product Manager</span>                        
                     </div>
-                <div class="social">
-                    <i class="fab fa-facebook-f"></i>
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-linkedin"></i>
                 </div>
-                </div>
-            </div>
-            <div class="box">
-                <img src="images/team/team-3.jpg" alt="">
-                <div class="info">
-                    <div class="head">
-                    <h2>Sarah Jhonson</h2>
-                    <span>Product Manager</span>                        
+                <div class="box">
+                    <img src="images/team/team-2.jpg" alt="">
+                    <div class="info">
+                        <div class="head">
+                        <h2>Sarah Jhonson</h2>
+                        <span>Product Manager</span>                        
+                        </div>
+                    <div class="social">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-linkedin"></i>
                     </div>
-                <div class="social">
-                    <i class="fab fa-facebook-f"></i>
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-linkedin"></i>
-                </div>
-                </div>
-            </div>
-            <div class="box">
-                <img src="images/team/team-4.jpg" alt="">
-                <div class="info">
-                    <div class="head">
-                    <h2>Sarah Jhonson</h2>
-                    <span>Product Manager</span>                        
                     </div>
-                <div class="social">
-                    <i class="fab fa-facebook-f"></i>
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-linkedin"></i>
                 </div>
+                <div class="box">
+                    <img src="images/team/team-3.jpg" alt="">
+                    <div class="info">
+                        <div class="head">
+                        <h2>Sarah Jhonson</h2>
+                        <span>Product Manager</span>                        
+                        </div>
+                    <div class="social">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="images/team/team-4.jpg" alt="">
+                    <div class="info">
+                        <div class="head">
+                        <h2>Sarah Jhonson</h2>
+                        <span>Product Manager</span>                        
+                        </div>
+                    <div class="social">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- End Team -->
     <!-- Start Contact -->
-    <div class="contact" id="contact">
-        <h3 class="main-header">
-            CONTACT
-        </h3>
-        <div class="section-header">
-            <h2>Get In Touch With <span>Us</span></h2>
-            <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci <br> 
-                expedita at voluptas atque vitae autem.</p>
-        </div>
-        <div class="contianer">
+    <div class="contact pt-5 pb-5" id="contact">
+        <div class="container">
+            <h3 class="main-header">
+                CONTACT
+            </h3>
+            <div class="section-header">
+                <h2>Get In Touch With <span>Us</span></h2>
+                <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci <br> 
+                    expedita at voluptas atque vitae autem.</p>
+            </div>
+            <div class="contianer pt-5">
                     <div class="contact-content">
-            <div class="box">
-                <i class="fas fa-map-marker-alt"></i>
-                <h2>ADDRESS</h2>
-                <p>A108 Adam Street, <br>
-                    New York, NY 535022</p>
+                <div class="box">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h2>ADDRESS</h2>
+                    <p>A108 Adam Street, <br>
+                        New York, NY 535022</p>
+                </div>
+                <div class="box">
+                    <i class="fas fa-phone-alt"></i>
+                    <h2>CALL US</h2>
+                    <p>+1 5589 55488 55 <br>
+                        +1 5589 22548 64</p>
+                </div>
+                <div class="box">
+                    <i class="fas fa-envelope"></i>
+                    <h2>EMAIL US</h2>
+                    <p>contact@example.com <br>
+                        info@example.com</p>
+                </div>
+                <div class="box">
+                    <i class="far fa-clock"></i>
+                    <h2>WORKING HOURS</h2>
+                    <p>Mon - Fri: 9AM to 5PM <br>
+                        Sunday: 9AM to 1PM</p>
+                </div>
             </div>
-            <div class="box">
-                <i class="fas fa-phone-alt"></i>
-                <h2>CALL US</h2>
-                <p>+1 5589 55488 55 <br>
-                    +1 5589 22548 64</p>
+            <div class="form">
+            <form action="">
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Email address</label>
+                  </div>
+                  <div class="form-floating">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Password</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Subject</label>
+                  </div>
+                  <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                    <label for="floatingTextarea2">Message</label>
+                  </div>
+                  <button type="button" class="btn btn-primary">Send Message</button>
+            </form>            
             </div>
-            <div class="box">
-                <i class="fas fa-envelope"></i>
-                <h2>EMAIL US</h2>
-                <p>contact@example.com <br>
-                    info@example.com</p>
             </div>
-            <div class="box">
-                <i class="far fa-clock"></i>
-                <h2>WORKING HOURS</h2>
-                <p>Mon - Fri: 9AM to 5PM <br>
-                    Sunday: 9AM to 1PM</p>
-            </div>
-        </div>
-        <div class="form">
-        <form action="">
-            <div class="form-floating mb-3">
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                <label for="floatingInput">Email address</label>
-              </div>
-              <div class="form-floating">
-                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                <label for="floatingPassword">Password</label>
-              </div>
-              <div class="form-floating mb-3">
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                <label for="floatingInput">Subject</label>
-              </div>
-              <div class="form-floating">
-                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-                <label for="floatingTextarea2">Message</label>
-              </div>
-              <button type="button" class="btn btn-primary">Send Message</button>
-        </form>            
-        </div>
         </div>
     </div>
     <!-- End Contact -->
     <!-- Start Footer -->
-    <div class="footer">
-            <div class="container">
-                <div class="row">
-                <div class="col">
+    <div class="footer pt-5 pb-5">
+                <div class="row align-items-center justyfy-content-center ms-2 md-5">
+                <div class="col-lg-3 col-md-4">
                     <div class="links">
                         <h3>USEFUL LINKS</h3>
                         <ul>
@@ -596,8 +557,8 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col">
-        <div class="services">
+                <div class="col-lg-3 col-md-4">
+        <div class="service">
             <h3>OUR SERVICES</h3>
             <ul>
                 <li>
@@ -623,7 +584,7 @@
             </ul>
         </div>                    
                 </div>
-                <div class="col">
+                <div class="col-lg-3 col-md-4">
                     <div class="contact-us">
                         <h3>CONTACT US</h3>
                         <p>A108 Adam Street
@@ -633,7 +594,7 @@
                             <span>Email: info@example.com</span>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-lg-3 col-md-4">
                     <div class="about-us">
                         <h3>About Hidayah</h3>
                         <p>Cras fermentum odio eu feugiat lide par naso tierra.  Justo eget nada<br> terra videa magna derita
@@ -648,8 +609,6 @@
                     </div>
                 </div>                    
                 </div>
-
-            </div>
     </div>
     <!-- End Footer -->
     <!-- Start Copy -->
@@ -658,8 +617,11 @@
         Designed by ♥ <span>Ahmed Walid</span> 
     </div>
     <!-- End Copy -->
-    <script src="js/bootstrap.js"></script>
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/popper.min.js"></script>
+    <span class="up">
+        up
+    </span>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
