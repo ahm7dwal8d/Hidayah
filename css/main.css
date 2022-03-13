@@ -593,6 +593,11 @@ a {
     -o-transform: translate(-50% , -50%);
     z-index: 1001;
     background-color: #fff;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
 }
 .box-img .box-head {
     text-align: center;
@@ -603,7 +608,7 @@ a {
 }
 .box-img img {
     max-width: 100%;
-    max-height: 60%;
+    max-height: 100%;
 }
 .close-button {
     position: absolute;
@@ -615,6 +620,14 @@ a {
     padding: 10px;
     border-radius: 4px;
     cursor: pointer;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
 }
 /* End Portfolio */
 /* Start Testimonials */
