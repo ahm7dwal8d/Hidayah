@@ -100,6 +100,61 @@ function MangeBoxs() {
     })
 }
 
+let ProtfolioImg = document.querySelectorAll(".portfolio img")
+ProtfolioImg.forEach((img) => {
+    img.addEventListener("click" , function () {
+        let overlyBox = document.createElement("div")
+
+        overlyBox.className = "overly-box"
+
+        document.body.appendChild(overlyBox)
+
+        let BoxImg = document.createElement("div")
+
+        BoxImg.className = "box-img"
+
+        if (img.alt !== null) {
+
+            let Heade = document.createElement("h3")
+
+            Heade.className = "box-head"
+
+            let HeaderText = document.createTextNode(img.alt)
+
+            Heade.appendChild(HeaderText)
+
+            BoxImg.appendChild(Heade)
+        }
+
+        let overlyImg = document.createElement("img")
+
+        overlyImg.src = img.src;
+
+        BoxImg.appendChild(overlyImg)
+
+        overlyBox.appendChild(BoxImg)
+
+        
+
+        let CloseButton = document.createElement("span");
+
+        CloseButton.className = "close-button"
+
+        let CloseButtonText = document.createTextNode("X")
+
+        CloseButton.appendChild(CloseButtonText)
+
+        BoxImg.appendChild(CloseButton)
+
+        document.addEventListener("click" , function (e) {
+            if (e.target.className === "close-button") {
+                BoxImg.remove()
+                overlyBox.remove()
+            }
+        })
+    })
+})
+
 // Button To Up 
 
 let ButtonToUp = document.querySelector("span.up")
