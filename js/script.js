@@ -30,7 +30,7 @@ window.onscroll = function () {
             span.style.width = "0";
         })
     }
-    if (window.scrollY > AboutSctionOfsetTop) {
+    if (window.scrollY > CounterSectionoffsetTop) {
         if (!Started) {
             CounterSectionElement.forEach((span)=> StartCounter(span) )
         }
@@ -41,6 +41,65 @@ window.onscroll = function () {
         ButtonToUp.classList.add("active")
     } else {
         ButtonToUp.classList.remove("active")
+    }
+
+// About Animate 
+
+    if (window.scrollY >= AboutSctionOfsetTop) {
+
+        $(".img").animate({
+
+            opacity: "1",
+
+            left: "0"
+
+        } , 1000)
+
+        $(".info").animate({
+
+            opacity: "1",
+
+            right: "0"
+
+        } , 1000)
+
+    }
+    // counter Animate 
+
+    if (window.scrollY >= CounterSectionoffsetTop) {
+
+        $(".counter .box").animate({
+
+            opacity: "1"
+
+        } , 2000)
+
+    }
+
+    // Services animate
+
+    let ServicesSection = document.querySelector(".services")
+    let ServicesOffsetTop = ServicesSection.offsetTop;
+
+    if (window.scrollY >= ServicesOffsetTop) {
+
+        $(".services .box").animate({
+
+            opacity: "1"
+
+        } , 2000)
+
+    }
+
+    // portfolio section 
+
+    let portfolio = document.querySelector(".portfolio");
+    let portfolioOffsetTop = portfolio.offsetTop
+
+    if (window.scrollY >= portfolioOffsetTop) {
+        $(".portfolio .img1").animate({
+            opacity: "1",
+        } , 1000)
     }
 }
 
