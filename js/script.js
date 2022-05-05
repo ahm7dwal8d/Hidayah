@@ -1,227 +1,206 @@
-let landingSection = document.querySelector(".landing");
 
-let landingSectionArrey = ["slide-1.jpg" , "slide-2.jpg" , "slide-3.jpg"]
+// Header Section 
 
-let landingRandomNumber = Math.floor(Math.random() * landingSectionArrey.length)
+$(".header .burger-icon").click(function () {
 
-setInterval(function() {
-    let landingRandomNumber = Math.floor(Math.random() * landingSectionArrey.length)
-    landingSection.style.backgroundImage = "url(../images/slide/" + landingSectionArrey[landingRandomNumber] + ")"
+    $(".header ul").slideToggle()
+
+})
+
+$(".header ul li a").click(function (Event) {
+
+    Event.preventDefault()
+
+    $(this).addClass("active").parent().siblings().find("a").removeClass("active")
+
+    var scroll = 
+
+    $("html , body").animate({
+
+        scrollTop: $('.' + $(this).data("scroll")).offset().top - $(".header").innerHeight()
+
+    })
+
+})
+
+$(window).scroll(function () {
+
+    if ($(window).scrollTop() >= 800) {
+
+        $(".header").addClass("active")
+
+    } else {
+
+        $(".header").removeClass('active')
+
+    }
+
+})
+
+
+// Landing Section 
+
+let LandingSection = document.querySelector(".landing")
+
+let LandingArrey = ["slide-1.jpg" , "slide-2.jpg" , "slide-3.jpg"]
+
+let RandomNumber = Math.floor(Math.random() * LandingArrey.length)
+
+
+setInterval(function () {
+
+    let RandomNumber = Math.floor(Math.random() * LandingArrey.length)
+
+    LandingSection.style.backgroundImage = "url(images/slide/"+ LandingArrey[RandomNumber]+")"
+
+
 } , 10000)
 
-// Fixed Header 
 
-let Header = document.querySelector(".header")
+// Box Model Section 
 
-window.onscroll = function () {
-    if (window.scrollY >= 1000) {
-        Header.classList.add("fixed")
-    } else {
-        Header.classList.remove("fixed")
-    }
+$(".box-model .icon").click(function () {
 
-    if (window.scrollY > (AboutSctionOfsetTop + AboutSectionHeight - PageHeight)) {
-        AboutSpan.forEach((span)=> {
-            span.style.width = span.dataset.progress;
-        })
-    }
-    if (window.scrollY < (AboutSctionOfsetTop + AboutSectionHeight - PageHeight)) {
-        AboutSpan.forEach((span)=> {
-            span.style.width = "0";
-        })
-    }
-    if (window.scrollY > CounterSectionoffsetTop) {
-        if (!Started) {
-            CounterSectionElement.forEach((span)=> StartCounter(span) )
-        }
-        Started = true
-    }
+    $(".box-model").toggleClass("active")
 
-    if (window.scrollY >= 1000) {
-        ButtonToUp.classList.add("active")
-    } else {
-        ButtonToUp.classList.remove("active")
-    }
+})
 
-// About Animate 
+$(".box-model ul div").click(function () {
 
-    if (window.scrollY >= AboutSctionOfsetTop) {
+    $(this).addClass("active").siblings().removeClass("active")
 
-        $(".img").animate({
+})
 
-            opacity: "1",
+document.body.classList.add(localStorage.getItem("body-color"))
 
-            left: "0"
+let bodyColor = document.querySelectorAll(".box-model ul div")
 
-        } , 1000)
+let bodyColorArrey = []
 
-        $(".info").animate({
+for (let i = 0; i < bodyColor.length; i++) {
 
-            opacity: "1",
+    bodyColorArrey.push(bodyColor[i].getAttribute("data-color"))
 
-            right: "0"
+    bodyColor[i].addEventListener("click" , function () {
 
-        } , 1000)
+        document.body.classList.remove(...bodyColorArrey)
 
-    }
-    // counter Animate 
+        document.body.classList.add(bodyColor[i].getAttribute("data-color"))
 
-    if (window.scrollY >= CounterSectionoffsetTop) {
+        localStorage.setItem("body-color" , bodyColor[i].getAttribute("data-color"))
 
-        $(".counter .box").animate({
-
-            opacity: "1"
-
-        } , 2000)
-
-    }
-
-    // Services animate
-
-    let ServicesSection = document.querySelector(".services")
-    let ServicesOffsetTop = ServicesSection.offsetTop;
-
-    if (window.scrollY >= ServicesOffsetTop) {
-
-        $(".services .box").animate({
-
-            opacity: "1"
-
-        } , 2000)
-
-    }
-
-    // portfolio section 
-
-    let portfolio = document.querySelector(".portfolio");
-    let portfolioOffsetTop = portfolio.offsetTop
-
-    if (window.scrollY >= portfolioOffsetTop) {
-        $(".portfolio .img1").animate({
-            opacity: "1",
-        } , 1000)
-    }
+    })
 }
 
-// Progress Section 
+// Skills Section 
 
-let AboutSection = document.querySelector(".about")
-let AboutSctionOfsetTop = AboutSection.offsetTop;
-let AboutSectionHeight = AboutSection.offsetHeight;
-let PageHeight = window.innerHeight;
-let AboutSpan = document.querySelectorAll(".about .skills .prog-holder .prog span")
+let SkillsSection = document.querySelector('.skills')
+
+let ProgSpan = document.querySelectorAll(".skills .prog-holder span")
+
+let SkillsOffsetTop = SkillsSection.offsetTop
 
 
+// State section 
 
-// Counter Section 
+let StateSection = document.querySelector(".state")
 
-let CounterSection = document.querySelector(".counter")
-let CounterSectionElement = document.querySelectorAll(".counter .contianer .box .num");
-console.log(CounterSectionElement[0])
-let CounterSectionoffsetTop = CounterSection.offsetTop;
+let StateOffsetTop = StateSection.offsetTop
+
+let StateSpan = document.querySelectorAll('.state .box > span')
+
 let Started = false
 
 function StartCounter(el) {
-    let goal = el.dataset.goal;
+
+    let Goal = el.dataset.goal;
+
     let Counte = setInterval(function () {
+
         el.textContent++;
-        if (el.textContent === goal) {
+
+        if (el.textContent === Goal) {
+
             clearInterval(Counte)
+
         }
-    } , 2000 / goal)
+
+    })
+
 }
+
 
 // Portfolio Section 
 
-let PortfolioSpans = document.querySelectorAll(".portfolio .container .head-links span")
-let PortfolioBoxs = document.querySelectorAll(".portfolio .container .portfolio-content .img1")
+$(".portfolio ul li").click(function () {
 
-// Remove Active Class From Element And Add To Clicked Element
+    $(this).addClass("active").siblings().removeClass("active")
 
-PortfolioSpans.forEach((span)=> {
-    span.addEventListener("click" , RemoveActive)
-    span.addEventListener("click" , MangeBoxs)
+    var Box =  "." + $(this).data("portfolio")
+
+    $(".portfolio .row .all").fadeOut()
+
+    $(".portfolio .row "+ Box+"").fadeIn()
+
 })
 
-function RemoveActive() {
-    PortfolioSpans.forEach((span) => {
-        span.classList.remove("active")
-        this.classList.add("active")
+
+// Button To Top 
+
+$(".up").click(function () {
+
+    $("html , body").animate({
+
+        scrollTop: 0
+
     })
-}
 
-function MangeBoxs() {
-    PortfolioBoxs.forEach((box)=> {
-        box.style.display = "none"
-    })
-    document.querySelectorAll(this.dataset.class).forEach((el)=> {
-        el.style.display = "block"
-    })
-}
+})
 
-let ProtfolioImg = document.querySelectorAll(".portfolio img")
-ProtfolioImg.forEach((img) => {
-    img.addEventListener("click" , function () {
-        let overlyBox = document.createElement("div")
+$(window).scroll(function () {
 
-        overlyBox.className = "overly-box"
+    if ($(window).scrollTop() >= 800) {
 
-        document.body.appendChild(overlyBox)
+        $(".up").fadeIn()
 
-        let BoxImg = document.createElement("div")
+    } else {
 
-        BoxImg.className = "box-img"
+        $(".up").fadeOut()
 
-        if (img.alt !== null) {
+    }
 
-            let Heade = document.createElement("h3")
+})
 
-            Heade.className = "box-head"
+window.onscroll = function () {
 
-            let HeaderText = document.createTextNode(img.alt)
+    // Skills Section 
 
-            Heade.appendChild(HeaderText)
+    if (window.scrollY >= SkillsOffsetTop - 550 ) {
 
-            BoxImg.appendChild(Heade)
+        ProgSpan.forEach((span)=> {
+
+            span.style.width = span.dataset.prog
+
+        })
+
+    }
+
+    // State Section 
+
+    if (window.scrollY >= StateOffsetTop - 500) {
+
+        if (!Started) {
+
+            StateSpan.forEach((state) => {
+
+                StartCounter(state)
+
+            })
+
         }
 
-        let overlyImg = document.createElement("img")
+        Started = true
 
-        overlyImg.src = img.src;
+    }
 
-        BoxImg.appendChild(overlyImg)
-
-        overlyBox.appendChild(BoxImg)
-
-        
-
-        let CloseButton = document.createElement("span");
-
-        CloseButton.className = "close-button"
-
-        let CloseButtonText = document.createTextNode("X")
-
-        CloseButton.appendChild(CloseButtonText)
-
-        BoxImg.appendChild(CloseButton)
-
-        document.addEventListener("click" , function (e) {
-            if (e.target.className === "close-button") {
-                BoxImg.remove()
-                overlyBox.remove()
-            }
-        })
-    })
-})
-
-// Button To Up 
-
-let ButtonToUp = document.querySelector("span.up")
-
-ButtonToUp.onclick = function () {
-    window.scrollTo({
-        left: 0,
-        top: 0,
-        behavior: 'smooth'
-    })
 }

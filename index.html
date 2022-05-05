@@ -5,624 +5,783 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hidayah</title>
-    <link href="images/favicon.png" rel="icon">
     <link rel="stylesheet" href="css/normalze.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;
-1,600;1,700;1,800&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Start Header  -->
-    <div class="header">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container">
-              <a class="navbar-brand" href="index.html">Hidayah</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fas fa-bars"></i>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#services">Services</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#portfolio">Portfolio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#team">Team</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#testimonials">Testimonials</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                  </li>
-                </ul>
-              </div>
+    <header class="header p-3">
+        <div class="container">
+            <a href="#" class="logo text-decoration-none fs-3 text-white fw-bold">Hidayah</a>
+            <div class="burger-icon">
+                <i class="fas fa-bars fs-3 text-white fw-bold"></i>
             </div>
-          </nav>
-    </div>
+            <ul>
+                <li>
+                    <a href="#" class="active text-decoration-none text-capitalize fs-5" data-scroll="landing">home</a>
+                </li>
+                <li>
+                    <a href="#" class="text-decoration-none text-capitalize fs-5" data-scroll="about">about</a>
+                </li>
+                <li>
+                    <a href="#" class="text-decoration-none text-capitalize fs-5" data-scroll="services">services</a>
+                </li>
+                <li>
+                    <a href="#" class="text-decoration-none text-capitalize fs-5" data-scroll="portfolio">portfolio</a>
+                </li>
+                <li>
+                    <a href="#" class="text-decoration-none text-capitalize fs-5" data-scroll="team">team</a>
+                </li>
+                <li>
+                    <a href="#" class="text-decoration-none text-capitalize fs-5" data-scroll="contact">contact</a>
+                </li>
+            </ul>
+        </div>
+    </header>
     <!-- End Header  -->
-    <!-- Start landing -->
-    <div class="landing d-flex justyfy-content-center align-items-center" id="home">
-        <div class="container text-center position-relative z-index-1">
-                <h2 class=" z-index-1 text-white">Welcome to Hidayah</h2>
-                <p class=" z-index-1 text-white-50">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. 
-                    Minus et tempore modi architecto.</p>
-                    <a href="#"  class=" z-index-1">read more</a>
+    <!-- Start Landing  -->
+    <section class="landing">
+        <div class="container text-center">
+            <h1 class="text-white fs-1">Welcome to Hidayah</h1>
+            <p class="text-white lh-lg">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse 
+                doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+            <a href="#" class="logo text-decoration-none text-capitalize text-white rounded-1 mt-3 d-block">read more</a>
         </div>
-    </div>
-    <!-- End landing  -->
-    <!-- Start About -->
-    <div class="about pt-5 pb-5" id="about">
-            <div class="img">
-                <img src="images/about.jpg" alt="">
-                <div class="icon">
-                    <i class="fas fa-play"></i>
+    </section>
+    <!-- End Landing  -->
+    <!-- Start Box Model -->
+        <div class="box-model">
+            <div class="icon">
+                <i class="fas fa-cog"></i>
+            </div>
+            <div class="color p-2">
+                <h4 class="text-capitalize fs-5">change default color</h4>
+                <ul class="p-0">
+                    <div data-color="one"></div>
+                    <div data-color="two"></div>
+                    <div data-color="three"></div>
+                    <div class="active" data-color="four"></div>
+                </ul>
+            </div>
+        </div>
+    <!-- End Box Model -->
+    <!-- Start About  -->
+    <section class="about mt-4 mb-4">
+        <div class="row">
+            <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+                <div class="box mt-4">
+                    <img src="images/about.jpg" alt="">
+                    <div class="overly">
+                        <i class="fas fa-play fs-3"></i>
+                    </div>
                 </div>
-                <div class="skills">
-                    <div class="prog-holder">
-                        <h4>html</h4>
-                        <div class="prog">
-                            <span data-progress="100%"></span>
-                        </div>
-                    </div>
-                    <div class="prog-holder">
-                        <h4>css</h4>
-                        <div class="prog">
-                            <span data-progress="90%"></span>
-                        </div>
-                    </div>
-                    <div class="prog-holder">
-                        <h4>javascript</h4>
-                        <div class="prog">
-                            <span data-progress="75%"></span>
-                        </div>
-                    </div>
             </div>
-            </div>
-            <div class="info">
-                <h2>Enim quis est voluptatibus aliquid consequatur fugiat</h2>
-                <p>Esse voluptas cumque vel exercitationem. Reiciendis est hic accusamus. Non ipsam et sed minima temporibus laudantium. Soluta voluptate sed facere corporis dolores excepturi. 
-                    Libero laboriosam sint et id nulla tenetur. Suscipit aut voluptate.</p>
-                    <div class="info-content pt-5">
-                        <div class="box">
-                            <div class="icons">
-                                <i class="fas fa-fingerprint"></i>           
-                            </div>
-                            <div class="text">
-                                <h3>Lorem Ipsum</h3>
-                                <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-                            </div>
-                        </div>
-                        <div class="box">
-                            <div class="icons">
-                                <i class="fas fa-gift"></i>
-                            </div>
-                            <div class="text">
-                                <h3>Nemo Enim</h3>
-                                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
-                            </div>
-                        </div>
-                        <div class="box">
-                            <div class="icons">
-                                <i class="fas fa-atom"></i>
-                            </div>
-                            <div class="text">
-                                <h3>Dine Pad</h3>
-                                <p>Explicabo est voluptatum asperiores consequatur magnam. Et veritatis odit. Sunt aut deserunt minus aut eligendi omnis</p>
-                            </div>
+            <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+                <div class="box mt-4 ms-3">
+                    <h3 class="fs-2">Enim quis est voluptatibus aliquid <br> consequatur fugiat</h3>
+                    <p class="lh-lg text-black-50 fs-5">Esse voluptas cumque vel exercitationem. Reiciendis est hic accusamus. Non ipsam et sed minima temporibus laudantium. Soluta voluptate sed facere corporis dolores excepturi. Libero laboriosam sint et id nulla tenetur. Suscipit aut voluptate.</p>
+                    <div class="d-flex align-items-center icon">
+                        <i class="fas fa-fingerprint fs-2"></i>
+                        <div class="info ms-3">
+                            <h4>Lorem Ipsum</h4>
+                            <p class="lh-lg text-black-50 fs-5">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
                         </div>
                     </div>
+                    <div class="d-flex align-items-center icon">
+                        <i class="fas fa-gift fs-2"></i>
+                        <div class="info ms-3">
+                            <h4>Nemo Enim</h4>
+                            <p class="lh-lg text-black-50 fs-5">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center icon">
+                        <i class="fab fa-react fs-2"></i>
+                        <div class="info ms-3">
+                            <h4>Dine Pad</h4>
+                            <p class="lh-lg text-black-50 fs-5">Explicabo est voluptatum asperiores consequatur magnam. Et veritatis odit. Sunt aut deserunt minus aut eligendi omnis</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-    </div>
+        </div>
+    </section>
     <!-- End About  -->
-    <!-- Start Counter -->
-    <div class="counter pt-5 pb-5">
-        <div class="contianer">
-            <div class="box">
-                <span class="num" data-goal="232">0</span>
-                <span class="head">clients</span>
+    <!-- Start Skills  -->
+    <section class="skills pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-12 col-md-12">
+                    <div class="box mt-4">
+                        <div class="prog-holder mt-2">
+                            <div class="head d-flex justify-content-between">
+                                <h5 class="text-uppercase fw-bold fs-6">html</h5>
+                                <h5>100%</h5>
+                            </div>
+                            <div class="prog mt-3">
+                                <span data-prog="100%"></span>
+                            </div>
+                        </div>
+                        <div class="prog-holder mt-3">
+                            <div class="head d-flex justify-content-between">
+                                <h5 class="text-uppercase fw-bold fs-6">css</h5>
+                                <h5>90%</h5>
+                            </div>
+                            <div class="prog mt-2">
+                                <span data-prog="90%"></span>
+                            </div>
+                        </div>
+                        <div class="prog-holder mt-3">
+                            <div class="head d-flex justify-content-between">
+                                <h5 class="text-uppercase fw-bold fs-6">javascript</h5>
+                                <h5>75%</h5>
+                            </div>
+                            <div class="prog mt-2">
+                                <span data-prog="75%"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-12 col-md-12">
+                    <div class="box mt-4">
+                        <div class="prog-holder mt-2">
+                            <div class="head d-flex justify-content-between">
+                                <h5 class="text-uppercase fw-bold fs-6">php</h5>
+                                <h5>80%</h5>
+                            </div>
+                            <div class="prog mt-3">
+                                <span data-prog="80%"></span>
+                            </div>
+                        </div>
+                        <div class="prog-holder mt-3">
+                            <div class="head d-flex justify-content-between">
+                                <h5 class="text-uppercase fw-bold fs-6">WORDPRESS/CMS</h5>
+                                <h5>90%</h5>
+                            </div>
+                            <div class="prog mt-2">
+                                <span data-prog="90%"></span>
+                            </div>
+                        </div>
+                        <div class="prog-holder mt-3">
+                            <div class="head d-flex justify-content-between">
+                                <h5 class="text-uppercase fw-bold fs-6">photoshop</h5>
+                                <h5>75%</h5>
+                            </div>
+                            <div class="prog mt-2">
+                                <span data-prog="75%"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="box">
-                <span class="num" data-goal="521">0</span>
-                <span class="head">projects</span>
-            </div>
-            <div class="box">
-                <span class="num" data-goal="1463">0</span>
-                <span class="head">hours of support</span>
-            </div>
-            <div class="box">
-                <span class="num" data-goal="100">0</span>
-                <span class="head">hard workers</span>
+        </div>
+    </section>
+    <!-- End Skills  -->
+    <!-- Start State  -->
+    <div class="state pt-5 pb-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-md-6 col-sm-12">
+                    <div class="box mt-4 text-center">
+                        <span class="fs-1 fw-bold" data-goal="232">0</span>
+                        <h5 class="fs-3">Clients</h5>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-sm-12">
+                    <div class="box mt-4 text-center">
+                        <span class="fs-1 fw-bold" data-goal="521">0</span>
+                        <h5 class="fs-3">Projects</h5>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-sm-12">
+                    <div class="box mt-4 text-center">
+                        <span class="fs-1 fw-bold" data-goal="1463">0</span>
+                        <h5 class="fs-3">Hours Of Support</h5>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-sm-12">
+                    <div class="box mt-4 text-center">
+                        <span class="fs-1 fw-bold" data-goal="15">0</span>
+                        <h5 class="fs-3">Hard <span>W</span>orkers</h5>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <!-- End Counter  -->
+    <!-- End State  -->
     <!-- Start Services  -->
-    <div class="services pt-5 pb-5" id="services">
-        <h3 class="main-header">
-            services
-        </h3>
-        <div class="section-header">
-            <h2>Check our <span>Services</span></h2>
-            <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci <br> 
-                expedita at voluptas atque vitae autem.</p>
-        </div>
-        <div class="container pt-5">
-            <div class="box">
-                <div class="icons">
-                    <i class="fas fa-chart-pie"></i>
-                </div>
-                <div class="info">
-                    <h2>Lorem Ipsum</h2>
-                    <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-                </div>
+    <div class="services pt-5 pb-5">
+        <div class="container">
+            <div class="main-header text-center">
+                <h2 class="fs-4">SERVICES</h2>
+                <h3 class="mt-3 fs-2 fw-bold">Check our <span>Services</span></h3>
+                <p class="text-black-50 fs-6 lh-lg">Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
             </div>
-            <div class="box">
-                <div class="icons">
-                    <i class="fas fa-layer-group"></i>
-                </div>
-                <div class="info">
-                    <h2>Lorem Ipsum</h2>
-                    <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-                </div>
-            </div>
-            <div class="box">
-                <div class="icons">
-                    <i class="fab fa-creative-commons-sampling"></i>
-                </div>
-                <div class="info">
-                    <h2>Lorem Ipsum</h2>
-                    <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-                </div>
-            </div>
-            <div class="box">
-                <div class="icons">
-                    <i class="fas fa-vector-square"></i>
-                </div>
-                <div class="info">
-                    <h2>Lorem Ipsum</h2>
-                    <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-                </div>
-            </div>
-            <div class="box">
-                    <i class="fas fa-fingerprint"></i>
-                    <div class="info">
-                        <h2>Lorem Ipsum</h2>
-                        <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+            <div class="row mt-5">
+                <div class="col-xl-4 col-md-6 col-sm-12">
+                    <div class="box mt-4 d-flex">
+                        <i class="fas fa-chart-pie fs-2"></i>
+                        <div class="info ms-3">
+                            <h3>Lorem Ipsum</h3>
+                            <p class="text-black-50 lh-lg">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+                        </div>
                     </div>
-            </div>
-            <div class="box">
-                    <i class="fas fa-child"></i>
-                <div class="info">
-                    <h2>Lorem Ipsum</h2>
-                    <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12">
+                    <div class="box mt-4 d-flex">
+                        <i class="fas fa-layer-group fs-2"></i>
+                        <div class="info ms-3">
+                            <h3>Dolor Sitema</h3>
+                            <p class="text-black-50 lh-lg">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12">
+                    <div class="box mt-4 d-flex">
+                        <i class="fab fa-react fs-2"></i>
+                        <div class="info ms-3">
+                            <h3>Sed ut perspiciatis</h3>
+                            <p class="text-black-50 lh-lg">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12">
+                    <div class="box mt-4 d-flex">
+                        <i class="fas fa-vector-square fs-2"></i>
+                        <div class="info ms-3">
+                            <h3>Magni Dolores</h3>
+                            <p class="text-black-50 lh-lg">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12">
+                    <div class="box mt-4 d-flex">
+                        <i class="fas fa-layer-group fs-2"></i>
+                        <div class="info ms-3">
+                            <h3>Nemo Enim</h3>
+                            <p class="text-black-50 lh-lg">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-sm-12">
+                    <div class="box mt-4 d-flex">
+                        <i class="fas fa-layer-group fs-2"></i>
+                        <div class="info ms-3">
+                            <h3>Eiusmod Tempor</h3>
+                            <p class="text-black-50 lh-lg">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- End Services  -->
-    <!-- Start Call -->
-    <div class="call">
-        <div class="call-content">
-        <h2>Call To Action</h2>
-        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat <br> 
-            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <a href="#">call to action</a>            
+    <!-- Start Action  -->
+    <div class="action pt-5 pb-5">
+        <div class="container text-center">
+            <h4 class="text-white fs-3">Call To Action</h4>
+            <p class="text-white fs-5 lh-lg">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <a href="#" class="logo text-decoration-none text-capitalize text-white rounded-1 mt-3 d-block">call to action</a>
         </div>
     </div>
-    <!-- End Call -->
-    <!-- Start Portfolio -->
-    <div class="portfolio pt-5 pb-5" id="portfolio">
-        <h3 class="main-header">
-            portfolio
-        </h3>
-        <div class="section-header">
-            <h2>Check our <span>portfolio</span></h2>
-            <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci <br> 
-                expedita at voluptas atque vitae autem.</p>
-        </div>
-        <div class="container pt-5">
-            <div class="head-links">
-                <span class="active" data-class=".img1">all</span> \
-                <span data-class=".app">app</span> \
-                <span data-class=".card">card</span> \
-                <span data-class=".web">web</span>
-            </div>
-            <div class="portfolio-content">
-                <div class="img1 app">
-                    <img src="images/portfolio/portfolio-1.jpg" alt="app">
-                </div>
-                <div class="img1 card">
-                    <img src="images/portfolio/portfolio-2.jpg" alt="card">
-                </div>
-                <div class="img1 card">
-                    <img src="images/portfolio/portfolio-3.jpg" alt="card">
-                </div>
-                <div class="img1 app">
-                    <img src="images/portfolio/portfolio-4.jpg" alt="app">
-                </div>
-                <div class="img1 app">
-                    <img src="images/portfolio/portfolio-5.jpg" alt="app">
-                </div>
-                <div class="img1 card">
-                    <img src="images/portfolio/portfolio-6.jpg" alt="card">
-                </div>
-                <div class="img1 app">
-                    <img src="images/portfolio/portfolio-7.jpg" alt="app">
-                </div>
-                <div class="img1 card">
-                    <img src="images/portfolio/portfolio-8.jpg" alt="card">
-                </div>
-                <div class="img1 app">
-                    <img src="images/portfolio/portfolio-9.jpg" alt="app">
-                </div>
-                <div class="img1 web">
-                    <img src="images/portfolio/portfolio-details-1.jpg" alt="web">
-                </div>
-                <div class="img1 web">
-                    <img src="images/portfolio/portfolio-details-2.jpg" alt="web">
-                </div>
-                <div class="img1 web">
-                    <img src="images/portfolio/portfolio-details-3.jpg" alt="web">
-                </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Portfolio -->
-    <!-- Start Testimonials -->
-    <div class="testimonials pt-5 pb-5" id="testimonials">
+    <!-- End Action  -->
+    <!-- Start Portfolio  -->
+    <div class="portfolio pt-5 pb-5">
         <div class="container">
-            <h3 class="main-header">
-                TESTIMONIALS
-            </h3>
-            <div class="section-header">
-                <h2>What They <span>Are Saying </span> About Us</h2>
-                <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci <br> 
-                    expedita at voluptas atque vitae autem.</p>
+            <div class="main-header text-center">
+                <h2 class="fs-4">PORTFOLIO</h2>
+                <h3 class="mt-3 fs-2 fw-bold">Check our <span>PORTFOLIO</span></h3>
+                <p class="text-black-50 fs-6 lh-lg">Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
             </div>
-            <div class="testimonials-content pt-5">
-                <div class="box">
-                    <div class="head">
-                        <img src="images/testimonials/testimonials-1.jpg" alt="">
-                        <div class="head-info">
-                            <h1>Saul Goodman</h1>
-                            <span>Ceo & Founder</span>
+            <ul class="text-center d-flex justify-content-center mt-4">
+                <li class="text-uppercase active fw-bold" data-portfolio="all">all</li>
+                <li class="text-uppercase fw-bold" data-portfolio="app">app</li>
+                <li class="text-uppercase fw-bold" data-portfolio="car">card</li>
+                <li class="text-uppercase fw-bold" data-portfolio="web">web</li>
+            </ul>
+            <div class="row mt-4">
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 all app">
+                    <div class="box mt-4">
+                        <img src="images/portfolio/01.jpg" alt="">
+                        <div class="overly">
+                            <div class="info">
+                                <h5 class="text-capitalize">App 1</h5>
+                                <h6 class="text-black-50 text-capitalize">App</h6>
+                                <div class="icon d-flex">
+                                    <i class="fas fa-plus me-3 fs-3"></i>
+                                    <i class="fas fa-link me-3 fs-3"></i>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="content">
-                        <i class="fas fa-quote-left"></i>
-                        Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. 
-                        Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                        <i class="fas fa-quote-right"></i>
                     </div>
                 </div>
-                <div class="box">
-                    <div class="head">
-                        <img src="images/testimonials/testimonials-2.jpg" alt="">
-                        <div class="head-info">
-                            <h1>Sara Wilsson</h1>
-                            <span>Designer</span>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 all web">
+                    <div class="box mt-4">
+                        <img src="images/portfolio/02.jpg" alt="">
+                        <div class="overly">
+                            <div class="info">
+                                <h5 class="text-capitalize">web 1</h5>
+                                <h6 class="text-black-50 fw text-capitalize">web</h6>
+                                <div class="icon d-flex">
+                                    <i class="fas fa-plus me-3 fs-3"></i>
+                                    <i class="fas fa-link me-3 fs-3"></i>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="content">
-                        <i class="fas fa-quote-left"></i>
-                        Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum 
-                        velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                        <i class="fas fa-quote-right"></i>
                     </div>
                 </div>
-                <div class="box">
-                    <div class="head">
-                        <img src="images/testimonials/testimonials-3.jpg" alt="">
-                        <div class="head-info">
-                            <h1>Jena Karlis</h1>
-                            <span>Store Owner</span>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 all car">
+                    <div class="box mt-4">
+                        <img src="images/portfolio/03.jpg" alt="">
+                        <div class="overly">
+                            <div class="info">
+                                <h5 class="text-capitalize">card 2</h5>
+                                <h6 class="text-black-50 text-capitalize">card</h6>
+                                <div class="icon d-flex">
+                                    <i class="fas fa-plus me-3 fs-3"></i>
+                                    <i class="fas fa-link me-3 fs-3"></i>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="content">
-                        <i class="fas fa-quote-left"></i>
-                        Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor 
-                        labore quem eram duis noster aute amet eram fore quis sint minim.
-                        <i class="fas fa-quote-right"></i>
                     </div>
                 </div>
-                <div class="box">
-                    <div class="head">
-                        <img src="images/testimonials/testimonials-4.jpg" alt="">
-                        <div class="head-info">
-                            <h1>Matt Brandon</h1>
-                            <span>Freelancer</span>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 all app">
+                    <div class="box mt-4">
+                        <img src="images/portfolio/04.jpg" alt="">
+                        <div class="overly">
+                            <div class="info">
+                                <h5 class="text-capitalize">app 1</h5>
+                                <h6 class="text-black-50 text-capitalize">app</h6>
+                                <div class="icon d-flex">
+                                    <i class="fas fa-plus me-3 fs-3"></i>
+                                    <i class="fas fa-link me-3 fs-3"></i>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="content">
-                        <i class="fas fa-quote-left"></i>
-                        Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor 
-                        enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam. 
-                        <i class="fas fa-quote-right"></i>
                     </div>
                 </div>
-                <div class="box">
-                    <div class="head">
-                        <img src="images/testimonials/testimonials-5.jpg" alt="">
-                        <div class="head-info">
-                            <h1>John Larson</h1>
-                            <span>Entrepreneur</span>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 all car">
+                    <div class="box mt-4">
+                        <img src="images/portfolio/05.jpg" alt="">
+                        <div class="overly">
+                            <div class="info">
+                                <h5 class="text-capitalize">card 1</h5>
+                                <h6 class="text-black-50 text-capitalize">card</h6>
+                                <div class="icon d-flex">
+                                    <i class="fas fa-plus me-3 fs-3"></i>
+                                    <i class="fas fa-link me-3 fs-3"></i>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="content">
-                        <i class="fas fa-quote-left"></i>
-                        Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa 
-                        nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                        <i class="fas fa-quote-right"></i>
                     </div>
                 </div>
-                <div class="box">
-                    <div class="head">
-                        <img src="images/testimonials/testimonials-6.jpg" alt="">
-                        <div class="head-info">
-                            <h1>Emily Harison</h1>
-                            <span>Store Owner</span>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 all car">
+                    <div class="box mt-4">
+                        <img src="images/portfolio/02.jpg" alt="">
+                        <div class="overly">
+                            <div class="info">
+                                <h5 class="text-capitalize">card 1</h5>
+                                <h6 class="text-black-50 text-capitalize">card</h6>
+                                <div class="icon d-flex">
+                                    <i class="fas fa-plus me-3 fs-3"></i>
+                                    <i class="fas fa-link me-3 fs-3"></i>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="content">
-                        <i class="fas fa-quote-left"></i>
-                        Eius ipsam praesentium dolor quaerat inventore rerum odio. Quos laudantium adipisci eius. Accusamus qui iste 
-                        cupiditate sed temporibus est aspernatur. Sequi officiis ea et quia quidem. 
-                        <i class="fas fa-quote-right"></i>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Testimonials -->
-    <!-- Start Team -->
-    <div class="team pt-5 pb-5" id="team">
-        <h3 class="main-header">
-            TEAM
-        </h3>
-        <div class="section-header">
-            <h2>Our Hard Working <span>Team</span></h2>
-            <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci <br> 
-                expedita at voluptas atque vitae autem.</p>
-        </div>
-        <div class="container pt-5">
-            <div class="team-content">
-                <div class="box">
-                    <img src="images/team/team-1.jpg" alt="">
-                    <div class="info">
-                        <div class="head">
-                        <h2>Sarah Jhonson</h2>
-                        <span>Product Manager</span>                        
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 all web">
+                    <div class="box mt-4">
+                        <img src="images/portfolio/portfolio-7.jpg" alt="">
+                        <div class="overly">
+                            <div class="info">
+                                <h5 class="text-capitalize">card 1</h5>
+                                <h6 class="text-black-50 text-capitalize">card</h6>
+                                <div class="icon d-flex">
+                                    <i class="fas fa-plus me-3 fs-3"></i>
+                                    <i class="fas fa-link me-3 fs-3"></i>
+                                </div>
+                            </div>
                         </div>
-                    <div class="social">
-                        <i class="fab fa-facebook-f"></i>
-                        <i class="fab fa-twitter"></i>
-                        <i class="fab fa-instagram"></i>
-                        <i class="fab fa-linkedin"></i>
-                    </div>
                     </div>
                 </div>
-                <div class="box">
-                    <img src="images/team/team-2.jpg" alt="">
-                    <div class="info">
-                        <div class="head">
-                        <h2>Sarah Jhonson</h2>
-                        <span>Product Manager</span>                        
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 all app">
+                    <div class="box mt-4">
+                        <img src="images/portfolio/portfolio-8.jpg" alt="">
+                        <div class="overly">
+                            <div class="info">
+                                <h5 class="text-capitalize">app 1</h5>
+                                <h6 class="text-black-50 text-capitalize">app</h6>
+                                <div class="icon d-flex">
+                                    <i class="fas fa-plus me-3 fs-3"></i>
+                                    <i class="fas fa-link me-3 fs-3"></i>
+                                </div>
+                            </div>
                         </div>
-                    <div class="social">
-                        <i class="fab fa-facebook-f"></i>
-                        <i class="fab fa-twitter"></i>
-                        <i class="fab fa-instagram"></i>
-                        <i class="fab fa-linkedin"></i>
-                    </div>
                     </div>
                 </div>
-                <div class="box">
-                    <img src="images/team/team-3.jpg" alt="">
-                    <div class="info">
-                        <div class="head">
-                        <h2>Sarah Jhonson</h2>
-                        <span>Product Manager</span>                        
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 all web">
+                    <div class="box mt-4">
+                        <img src="images/portfolio/portfolio-9.jpg" alt="">
+                        <div class="overly">
+                            <div class="info">
+                                <h5 class="text-capitalize">web 1</h5>
+                                <h6 class="text-black-50 text-capitalize">web</h6>
+                                <div class="icon d-flex">
+                                    <i class="fas fa-plus me-3 fs-3"></i>
+                                    <i class="fas fa-link me-3 fs-3"></i>
+                                </div>
+                            </div>
                         </div>
-                    <div class="social">
-                        <i class="fab fa-facebook-f"></i>
-                        <i class="fab fa-twitter"></i>
-                        <i class="fab fa-instagram"></i>
-                        <i class="fab fa-linkedin"></i>
-                    </div>
-                    </div>
-                </div>
-                <div class="box">
-                    <img src="images/team/team-4.jpg" alt="">
-                    <div class="info">
-                        <div class="head">
-                        <h2>Sarah Jhonson</h2>
-                        <span>Product Manager</span>                        
-                        </div>
-                    <div class="social">
-                        <i class="fab fa-facebook-f"></i>
-                        <i class="fab fa-twitter"></i>
-                        <i class="fab fa-instagram"></i>
-                        <i class="fab fa-linkedin"></i>
-                    </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- End Team -->
-    <!-- Start Contact -->
-    <div class="contact pt-5 pb-5" id="contact">
+    <!-- End Portfolio  -->
+    <!-- Start Testimonlis -->
+    <div class="testimonlis pt-5 pb-5 ">
         <div class="container">
-            <h3 class="main-header">
-                CONTACT
-            </h3>
-            <div class="section-header">
-                <h2>Get In Touch With <span>Us</span></h2>
-                <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci <br> 
-                    expedita at voluptas atque vitae autem.</p>
+            <div class="main-header text-center">
+                <h2 class="fs-4 text-uppercase">testimonlis</h2>
+                <h3 class="mt-3 fs-2 fw-bold">Check our <span>PORTFOLIO</span></h3>
+                <p class="text-black-50 fs-6 lh-lg">Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
             </div>
-            <div class="contianer pt-5">
-                    <div class="contact-content">
-                <div class="box">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <h2>ADDRESS</h2>
-                    <p>A108 Adam Street, <br>
-                        New York, NY 535022</p>
+            <div class="row mt-4">
+                <div class="col-xl-6 col-lg-12 col-md-12">
+                    <div class="box mt-4">
+                        <div class="head d-flex">
+                            <img src="images/testimonials/testimonials-1.jpg" alt="">
+                            <div class="info ms-3">
+                                <h5 class="fw-bold">Saul Goodman</h5>
+                                <h6 class="text-black-50">Ceo & Founder</h6>
+                            </div>
+                        </div>
+                        <p class="lh-lg text-black-50 mt-3"><i class="fas fa-quote-left fs-3"></i> Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, 
+                            ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper. <i class="fas fa-quote-right fs-3"></i></p>
+                    </div>
                 </div>
-                <div class="box">
-                    <i class="fas fa-phone-alt"></i>
-                    <h2>CALL US</h2>
-                    <p>+1 5589 55488 55 <br>
-                        +1 5589 22548 64</p>
+                <div class="col-xl-6 col-lg-12 col-md-12">
+                    <div class="box mt-4">
+                        <div class="head d-flex">
+                            <img src="images/testimonials/testimonials-2.jpg" alt="">
+                            <div class="info ms-3">
+                                <h5 class="fw-bold">Sara Wilsson</h5>
+                                <h6 class="text-black-50">Designer</h6>
+                            </div>
+                        </div>
+                        <p class="lh-lg text-black-50 mt-3"><i class="fas fa-quote-left fs-3"></i> Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, 
+                            ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper. <i class="fas fa-quote-right fs-3"></i></p>
+                    </div>
                 </div>
-                <div class="box">
-                    <i class="fas fa-envelope"></i>
-                    <h2>EMAIL US</h2>
-                    <p>contact@example.com <br>
-                        info@example.com</p>
+                <div class="col-xl-6 col-lg-12 col-md-12">
+                    <div class="box mt-4">
+                        <div class="head d-flex">
+                            <img src="images/testimonials/testimonials-3.jpg" alt="">
+                            <div class="info ms-3">
+                                <h5 class="fw-bold">Jena Karlis</h5>
+                                <h6 class="text-black-50">Store Owner</h6>
+                            </div>
+                        </div>
+                        <p class="lh-lg text-black-50 mt-3"><i class="fas fa-quote-left fs-3"></i> Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, 
+                            ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper. <i class="fas fa-quote-right fs-3"></i></p>
+                    </div>
                 </div>
-                <div class="box">
-                    <i class="far fa-clock"></i>
-                    <h2>WORKING HOURS</h2>
-                    <p>Mon - Fri: 9AM to 5PM <br>
-                        Sunday: 9AM to 1PM</p>
+                <div class="col-xl-6 col-lg-12 col-md-12">
+                    <div class="box mt-4">
+                        <div class="head d-flex">
+                            <img src="images/testimonials/testimonials-4.jpg" alt="">
+                            <div class="info ms-3">
+                                <h5 class="fw-bold">Matt Brandon</h5>
+                                <h6 class="text-black-50">Freelancer</h6>
+                            </div>
+                        </div>
+                        <p class="lh-lg text-black-50 mt-3"><i class="fas fa-quote-left fs-3"></i> Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, 
+                            ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper. <i class="fas fa-quote-right fs-3"></i></p>
+                    </div>
                 </div>
-            </div>
-            <div class="form">
-            <form action="">
-                <div class="form-floating mb-3">
-                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                    <label for="floatingInput">Email address</label>
-                  </div>
-                  <div class="form-floating">
-                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                    <label for="floatingPassword">Password</label>
-                  </div>
-                  <div class="form-floating mb-3">
-                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                    <label for="floatingInput">Subject</label>
-                  </div>
-                  <div class="form-floating">
-                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-                    <label for="floatingTextarea2">Message</label>
-                  </div>
-                  <button type="button" class="btn btn-primary">Send Message</button>
-            </form>            
-            </div>
+                <div class="col-xl-6 col-lg-12 col-md-12">
+                    <div class="box mt-4">
+                        <div class="head d-flex">
+                            <img src="images/testimonials/testimonials-5.jpg" alt="">
+                            <div class="info ms-3">
+                                <h5 class="fw-bold">John Larson</h5>
+                                <h6 class="text-black-50">Entrepreneur</h6>
+                            </div>
+                        </div>
+                        <p class="lh-lg text-black-50 mt-3"><i class="fas fa-quote-left fs-3"></i> Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, 
+                            ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper. <i class="fas fa-quote-right fs-3"></i></p>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-12 col-md-12">
+                    <div class="box mt-4">
+                        <div class="head d-flex">
+                            <img src="images/testimonials/testimonials-6.jpg" alt="">
+                            <div class="info ms-3">
+                                <h5 class="fw-bold">Emily Harison</h5>
+                                <h6 class="text-black-50">Store Owner</h6>
+                            </div>
+                        </div>
+                        <p class="lh-lg text-black-50 mt-3"><i class="fas fa-quote-left fs-3"></i> Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, 
+                            ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper. <i class="fas fa-quote-right fs-3"></i></p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <!-- End Contact -->
-    <!-- Start Footer -->
-    <div class="footer pt-5 pb-5">
-                <div class="row align-items-center justyfy-content-center ms-2 md-5">
-                <div class="col-lg-3 col-md-4">
-                    <div class="links">
-                        <h3>USEFUL LINKS</h3>
+    <!-- End Testimonlis -->
+    <!-- Start Team  -->
+    <div class="team pt-5 pb-5">
+        <div class="container">
+            <div class="main-header text-center">
+                <h2 class="fs-4 text-uppercase">team</h2>
+                <h3 class="mt-3 fs-2 fw-bold">Our Hard Working <span>Team</span></h3>
+                <p class="text-black-50 fs-6 lh-lg">Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+            </div>
+            <div class="row mt-4">
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                    <div class="box mt-4">
+                        <img src="images/team/team-1.jpg" alt="">
+                        <div class="overly text-center">
+                            <div class="overly-content">
+                                <h5>Walter White</h5>
+                                <h5>Chief Executive Officer</h5>
+                                <div class="icons">
+                                    <i class="fab fa-facebook-f fs-4 pe-2 pt-2"></i>
+                                    <i class="fab fa-twitter fs-4 pe-2 pt-2"></i>
+                                    <i class="fab fa-instagram fs-4 pe-2 pt-2"></i>
+                                    <i class="fab fa-linkedin fs-4 pe-2 pt-2"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                    <div class="box mt-4">
+                        <img src="images/team/team-2.jpg" alt="">
+                        <div class="overly text-center">
+                            <div class="overly-content">
+                                <h5>Sarah Jhonson</h5>
+                                <h5>Product Manager</h5>
+                                <div class="icons">
+                                    <i class="fab fa-facebook-f fs-4 pe-2 pt-2"></i>
+                                    <i class="fab fa-twitter fs-4 pe-2 pt-2"></i>
+                                    <i class="fab fa-instagram fs-4 pe-2 pt-2"></i>
+                                    <i class="fab fa-linkedin fs-4 pe-2 pt-2"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                    <div class="box mt-4">
+                        <img src="images/team/team-3.jpg" alt="">
+                        <div class="overly text-center">
+                            <div class="overly-content">
+                                <h5>William Anderson</h5>
+                                <h5>CTO</h5>
+                                <div class="icons">
+                                    <i class="fab fa-facebook-f fs-4 pe-2 pt-2"></i>
+                                    <i class="fab fa-twitter fs-4 pe-2 pt-2"></i>
+                                    <i class="fab fa-instagram fs-4 pe-2 pt-2"></i>
+                                    <i class="fab fa-linkedin fs-4 pe-2 pt-2"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                    <div class="box mt-4">
+                        <img src="images/team/team-4.jpg" alt="">
+                        <div class="overly text-center">
+                            <div class="overly-content">
+                                <h5>Amanda Jepson</h5>
+                                <h5>Accountant</h5>
+                                <div class="icons">
+                                    <i class="fab fa-facebook-f fs-4 pe-2 pt-2"></i>
+                                    <i class="fab fa-twitter fs-4 pe-2 pt-2"></i>
+                                    <i class="fab fa-instagram fs-4 pe-2 pt-2"></i>
+                                    <i class="fab fa-linkedin fs-4 pe-2 pt-2"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Team  -->
+    <!-- Start Contact  -->
+    <div class="contact pt-5 pb-5 ">
+        <div class="container">
+            <div class="main-header text-center">
+                <h2 class="fs-4 text-uppercase">contact</h2>
+                <h3 class="mt-3 fs-2 fw-bold">Our Hard Working <span>Team</span></h3>
+                <p class="text-black-50 fs-6 lh-lg">Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+            </div>
+            <div class="row mt-4">
+                <div class="col-xl-6 col-lg-12">
+                    <div class="box mt-4">
+                        <div class="row bg-white">
+                            <div class="col-lg-6 col-md-6">
+                                <div class="box mt-4 text-center">
+                                    <i class="fas fa-location-dot fs-1"></i>
+                                    <h4 class="fs-5 mt-3">ADDRESS</h4>
+                                    <p>A108 Adam Street,<br>
+                                        New York, NY 535022</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div class="box mt-4 text-center">
+                                    <i class="fas fa-phone fs-1"></i>
+                                    <h4 class="fs-5 mt-3">CALL US</h4>
+                                    <span class="d-block">+1 5589 55488 55</span>
+                                    <span>+1 5589 55488 54</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div class="box mt-4 text-center">
+                                    <i class="fas fa-envelope fs-1"></i>
+                                    <h4 class="fs-5 mt-3">EMAIL US</h4>
+                                    <span class="d-block">contact@example.com</span>
+                                    <span>info@example.com</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div class="box mt-4 text-center">
+                                    <i class="fas fa-clock fs-1"></i>
+                                    <h4 class="fs-5 mt-3">WORKING HOURS</h4>
+                                    <p>Mon - Fri: 9AM to 5PM <br>
+                                        Sunday: 9AM to 1PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-12">
+                    <div class="box mt-4">
+                        <form action="">
+                            <input type="text" name="" placeholder="Enter Your Name" id="">
+                            <input type="text" name="" placeholder="Enter Your Email" id="">
+                            <br>
+                            <input type="text" name="" placeholder="Enter Your Subject" id="">
+                            <br>
+                            <input type="text" name="" id="">
+                            <br>
+                            <input type="submit" value="submit">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Contact  -->
+    <!-- Start Footer  -->
+    <footer class="footer pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                    <div class="box mt-4">
+                        <h4 class="text-white fw-bold">USEFUL LINKS</h4>
                         <ul>
                             <li>
-                                <i class="fas fa-angle-right"></i>
-                                home
+                                <i class="fas fa-angle-right fs-5"></i>
+                                <a href="#" class="text-decoration-none text-capitalize ms-2">home</a>
                             </li>
                             <li>
-                                <i class="fas fa-angle-right"></i>
-                                about us
+                                <i class="fas fa-angle-right fs-5"></i>
+                                <a href="#" class="text-decoration-none text-capitalize ms-2">about</a>
                             </li>
                             <li>
-                                <i class="fas fa-angle-right"></i>
-                                services
+                                <i class="fas fa-angle-right fs-5"></i>
+                                <a href="#" class="text-decoration-none text-capitalize ms-2">services</a>
                             </li>
                             <li>
-                                <i class="fas fa-angle-right"></i>
-                                Terms of service
+                                <i class="fas fa-angle-right fs-5"></i>
+                                <a href="#" class="text-decoration-none text-capitalize ms-2">Terms of service</a>
                             </li>
                             <li>
-                                <i class="fas fa-angle-right"></i>
-                                Privacy policy
+                                <i class="fas fa-angle-right fs-5"></i>
+                                <a href="#" class="text-decoration-none text-capitalize ms-2">Privacy policy</a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4">
-        <div class="service">
-            <h3>OUR SERVICES</h3>
-            <ul>
-                <li>
-                    <i class="fas fa-angle-right"></i>
-                    Web Design
-                </li>
-                <li>
-                    <i class="fas fa-angle-right"></i>
-                    Web Development
-                </li>
-                <li>
-                    <i class="fas fa-angle-right"></i>
-                    Product Management
-                </li>
-                <li>
-                    <i class="fas fa-angle-right"></i>
-                    Marketing
-                </li>
-                <li>
-                    <i class="fas fa-angle-right"></i>
-                    Graphic Design
-                </li>
-            </ul>
-        </div>                    
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                    <div class="box mt-4">
+                        <h4 class="text-white fw-bold">OUR SERVICES</h4>
+                        <ul>
+                            <li>
+                                <i class="fas fa-angle-right fs-5"></i>
+                                <a href="#" class="text-decoration-none text-capitalize ms-2">Web Design</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-angle-right fs-5"></i>
+                                <a href="#" class="text-decoration-none text-capitalize ms-2">Web Development</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-angle-right fs-5"></i>
+                                <a href="#" class="text-decoration-none text-capitalize ms-2">Product Management</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-angle-right fs-5"></i>
+                                <a href="#" class="text-decoration-none text-capitalize ms-2">Marketing</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-angle-right fs-5"></i>
+                                <a href="#" class="text-decoration-none text-capitalize ms-2">Graphic Design</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col-lg-3 col-md-4">
-                    <div class="contact-us">
-                        <h3>CONTACT US</h3>
-                        <p>A108 Adam Street
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                    <div class="box mt-4">
+                        <h4 class="text-white fw-bold">CONTACT US</h4>
+                        <address class="text-white">A108 Adam Street
                             New York, NY 535022
-                            United States</p>
-                            <span>Phone: +1 5589 55488 55</span>
-                            <span>Email: info@example.com</span>
+                            United States</address>
+                            <p class="text-white"><span class="fw-bold">Phone</span>: +1 5589 55488 55</p>
+                            <p class="text-white"><span class="fw-bold">Email</span>: info@example.com</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4">
-                    <div class="about-us">
-                        <h3>About Hidayah</h3>
-                        <p>Cras fermentum odio eu feugiat lide par naso tierra.  Justo eget nada<br> terra videa magna derita
-                            valies darta donna mare <br> fermentum iaculis eu non diam phasellus.</p>
-                            <div class="icons">
-                                <i class="fab fa-twitter"></i>
-                                <i class="fab fa-facebook-f"></i>
-                                <i class="fab fa-instagram"></i>
-                                <i class="fab fa-skype"></i>
-                                <i class="fab fa-linkedin-in"></i>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                    <div class="box mt-4">
+                        <h4 class="text-white fw-bold">About Hidayah</h4>
+                        <p class="text-white lh-lg">
+                            Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.
+                        </p>
+                        <div class="icons d-flex">
+                            <div class="icon ms-2">
+                                <i class="fab fa-facebook-f fs-4 text-white"></i>
                             </div>
+                            <div class="icon ms-2">
+                                <i class="fab fa-twitter fs-4 text-white"></i>
+                            </div>
+                            <div class="icon ms-2">
+                                <i class="fab fa-instagram fs-4 text-white"></i>
+                            </div>
+                            <div class="icon ms-2">
+                                <i class="fab fa-linkedin-in fs-4 text-white"></i>
+                            </div>
+                            <div class="icon ms-2">
+                                <i class="fab fa-skype fs-4 text-white"></i>
+                            </div>
+                        </div>
                     </div>
-                </div>                    
                 </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copy pt-3 pb-3">
+        <p class="text-center text-white mt-4">© Copyright <span class="fw-bold text-white">Hidayah</span>. All Rights Reserved</p>
+        <p class="text-center text-white">Designed by <span>♥Ahmed walid</span></p>
     </div>
-    <!-- End Footer -->
-    <!-- Start Copy -->
-    <div class="copy">
-        © Copyright Hidayah. All Rights Reserved <br>
-        Designed by ♥ <span>Ahmed Walid</span> 
-    </div>
-    <!-- End Copy -->
-    <span class="up">
-        up
-    </span>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/all.min.js"></script>
-    <script src="js/script.js"></script>
+    <!-- End Footer  -->
+    <span class="up">up</span>
     <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/all.min.js"></script>
 </body>
 </html>
