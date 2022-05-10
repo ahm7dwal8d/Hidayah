@@ -13,8 +13,6 @@ $(".header ul li a").click(function (Event) {
 
     $(this).addClass("active").parent().siblings().find("a").removeClass("active")
 
-    var scroll = 
-
     $("html , body").animate({
 
         scrollTop: $('.' + $(this).data("scroll")).offset().top - $(".header").innerHeight()
@@ -22,6 +20,7 @@ $(".header ul li a").click(function (Event) {
     })
 
 })
+
 
 $(window).scroll(function () {
 
@@ -40,22 +39,46 @@ $(window).scroll(function () {
 
 // Landing Section 
 
-let LandingSection = document.querySelector(".landing")
+$(window).ready(function () {
+
+    $(".landing .slide").css("opacity" , "1")
+
+})
+
+let LandingSection = document.querySelectorAll(".landing .slide")
 
 let LandingArrey = ["slide-1.jpg" , "slide-2.jpg" , "slide-3.jpg"]
 
-let RandomNumber = Math.floor(Math.random() * LandingArrey.length)
+LandingSection.forEach((section)=> {
 
-
-setInterval(function () {
+    setInterval(function () {
 
     let RandomNumber = Math.floor(Math.random() * LandingArrey.length)
 
-    LandingSection.style.backgroundImage = "url(images/slide/"+ LandingArrey[RandomNumber]+")"
+    section.style.backgroundImage = "url(images/slide/"+ LandingArrey[RandomNumber]+")"
 
 
 } , 10000)
 
+})
+
+
+
+let sliderWrap = document.querySelector(".landing .slider")
+
+let slider = sliderWrap.getElementsByClassName("slide")
+
+function next() {
+
+    sliderWrap.append(slider[0])
+
+}
+
+function prev() {
+
+    sliderWrap.prepend(slider[slider.length - 1])
+
+}
 
 // Box Model Section 
 
@@ -92,7 +115,56 @@ for (let i = 0; i < bodyColor.length; i++) {
     })
 }
 
+// About Section 
+
+$(window).scroll(function () {
+
+    if ($(window).scrollTop() >= $(".about").offset().top - 400) {
+
+        $(".about .right").animate({
+
+            right: 0,
+            
+            opacity:1
+
+        })
+
+        $(".about .left").animate({
+
+            left: 0,
+
+            opacity:1
+
+        })
+
+    }
+
+})
+
 // Skills Section 
+
+$(window).scroll(function () {
+
+    if ($(window).scrollTop() >= $(".skills").offset().top - 400) {
+
+        $(".skills .right").animate({
+
+            right: 0,
+
+            opacity:1
+
+        })
+
+        $(".skills .left").animate({
+
+            left: 0,
+
+            opacity:1
+
+        })
+
+    }
+})
 
 let SkillsSection = document.querySelector('.skills')
 
@@ -102,6 +174,20 @@ let SkillsOffsetTop = SkillsSection.offsetTop
 
 
 // State section 
+
+$(window).scroll(function () {
+
+    if ($(window).scrollTop() >= $(".state").offset().top - 400) {
+
+        $(".state .hidden").animate({
+
+            opacity:1
+
+        })
+
+    }
+
+})
 
 let StateSection = document.querySelector(".state")
 
@@ -129,6 +215,53 @@ function StartCounter(el) {
 
 }
 
+// Services Section 
+
+$(window).scroll(function () {
+
+    if ($(window).scrollTop() >= $(".services").offset().top - 400) {
+
+        $(".services .hidden").animate({
+
+            opacity:1
+
+        })
+
+        $(".services .left").animate({
+
+            left:0,
+
+            opacity:1
+
+        })
+
+        $(".services .right").animate({
+
+            right:0,
+
+            opacity:1
+
+        })
+        
+    }
+
+})
+
+// Action Section 
+
+$(window).scroll(function () {
+
+    if ($(window).scrollTop() >= $(".action").offset().top - 400) {
+
+        $(".action .hidden").animate({
+
+            opacity:1
+
+        })
+
+    }
+
+})
 
 // Portfolio Section 
 
@@ -143,6 +276,162 @@ $(".portfolio ul li").click(function () {
     $(".portfolio .row "+ Box+"").fadeIn()
 
 })
+
+$(window).scroll(function () {
+
+    if ($(window).scrollTop() >= $(".portfolio").offset().top - 400) {
+
+        $(".portfolio .hidden").animate({
+
+            opacity:1
+
+        })
+
+        $(".portfolio .right").animate({
+
+            right:0,
+
+            opacity:1
+
+        })
+
+        $(".portfolio .left").animate({
+
+            left:0,
+
+            opacity:1
+
+        })
+
+    }
+
+})
+
+
+// Testimonlis Section 
+
+$(window).scroll(function () {
+
+    if ($(window).scrollTop() >= $(".testimonlis").offset().top - 400) {
+
+        $(".testimonlis .right").animate({
+
+            right: 0,
+            
+            opacity:1
+
+        })
+
+        $(".testimonlis .left").animate({
+
+            left: 0,
+
+            opacity:1
+
+        })
+
+    }
+
+})
+
+// Team Section 
+
+$(window).scroll(function () {
+
+    if ($(window).scrollTop() >= $(".team").offset().top - 400) {
+
+        $(".team .hidden").animate({
+
+            opacity:1
+
+        })
+
+        $(".team .right").animate({
+
+            right:0,
+
+            opacity:1
+
+        })
+
+        $(".team .left").animate({
+
+            left:0,
+
+            opacity:1
+
+        })
+
+    }
+
+})
+
+// Contact Section 
+
+$(window).scroll(function () {
+
+    if ($(window).scrollTop() >= $(".contact").offset().top - 400) {
+
+        $(".contact .hidden").animate({
+
+            opacity: 1
+
+        })
+
+        $(".contact .right").animate({
+
+            right: 0 ,
+            
+            opacity:1
+
+        })
+
+        $(".contact .left").animate({
+
+            left: 0 ,
+
+            opacity:1
+
+        })
+
+    }
+
+})
+
+let contactForm = document.querySelector(".contact form")
+
+let userName = document.querySelector(".contact input[name=username]")
+
+let userEmail = document.querySelector(".contact input[name=mail]")
+
+let userSubject = document.querySelector(".contact input[name=sub]")
+
+let userMsg = document.querySelector(".contact input[name=msg]")
+
+contactForm.onsubmit = function (event) {
+
+    event.preventDefault()
+
+    if (userName.value !== "") {
+
+        localStorage.setItem("userName" , userName.value)
+
+    }
+
+    if (userName.value !== "") {
+
+        localStorage.setItem("userEmail" , userEmail.value)
+
+    }
+
+    if (userSubject.value !== "") {
+
+        localStorage.setItem("userSubject" , userSubject.value)
+
+    }
+
+
+}
 
 
 // Button To Top 
@@ -204,3 +493,18 @@ window.onscroll = function () {
     }
 
 }
+
+
+// Footer Section 
+
+$(".footer .links li a").click(function (Event) {
+
+    Event.preventDefault()
+
+    $("html , body").animate({
+
+        scrollTop: $("." + $(this).data("footer")).offset.top - $(".header").innerHeight()
+
+    })
+
+})
